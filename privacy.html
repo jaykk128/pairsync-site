@@ -3,55 +3,58 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Voice Memo Sync Privacy Policy</title>
+<title>Pairsync Privacy Policy</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-<p class="nav"><a href="./">Voice Memo Sync</a></p>
-<h1>Voice Memo Sync Privacy Policy</h1>
+<p class="nav"><a href="./">Pairsync</a></p>
+<h1>Pairsync Privacy Policy</h1>
 <p class="meta">Last Updated: November 2026</p>
 
-<p>This Privacy Policy describes how Generic Shell, LLC, which operates Voice Memo Sync ("Voice Memo Sync," "we," "us," or "our"), handles information in connection with the Voice Memo Sync Android app and this website (collectively, the "Services").</p>
+<p>This Privacy Policy describes how Generic Shell, LLC, which operates Pairsync ("Pairsync," "we," "us," or "our"), handles information in connection with the Pairsync Android app and this website (collectively, the "Services").</p>
 
-<p>The short version: Voice Memo Sync runs only on your phone. It copies your voice recordings from your phone to your own Google Drive. There is no Voice Memo Sync server, and we do not receive, store, or see your recordings or any other information about you.</p>
+<p>The short version: Pairsync runs only on your phone. It keeps folders you choose on your phone in step with folders you choose in your own Google Drive. There is no Pairsync server, and we do not receive, store, or see your files or any other information about you.</p>
 
 <h2>Scope</h2>
 <p>This Policy applies to everyone who uses the Services.</p>
 
 <h2>Information the App Uses</h2>
-<p>The app uses only what it needs to work, and all of it stays on your phone or goes to your own Google account:</p>
+<p>The app uses only what it needs to sync, and all of it stays on your phone or goes to your own Google account:</p>
 <ul>
-<li><strong>Your recordings:</strong> with Android's permission to read audio files, the app reads the recordings in the folder you choose (by default Samsung Voice Recorder's folder) and uploads them.</li>
+<li><strong>Phone folders you choose:</strong> through Android's folder picker you grant access to each folder you pair, one at a time. The app reads, writes, renames, and deletes files only inside those folders, as the sync method you picked requires. It has no access to the rest of your phone's storage.</li>
 <li><strong>Your Google account:</strong> the email address of the Google account you connect, kept on your phone so the app asks for access to the same account each time.</li>
-<li><strong>Google Drive access:</strong> the app asks only for permission to see and change the files it creates itself (Google's "drive.file" scope). It creates one folder and uploads your recordings into it. It cannot see any other files in your Drive. Google Play services on your phone holds the access tokens; the app does not store them.</li>
-<li><strong>Upload records:</strong> a list of the recordings the app has seen, with their name, size, date, and upload status, plus your settings. These stay on your phone.</li>
+<li><strong>Google Drive access:</strong> the app asks for access to your Google Drive so that two way and download pairs can see files added to a paired folder from anywhere (the Drive website, other devices). It uses that access only to list folders when you pick one, and to sync the Drive folders you paired. It does not read, change, or delete anything outside those folders. Google Play services on your phone holds the access tokens; the app does not store them.</li>
+<li><strong>Sync records:</strong> for each paired file, its path, size, date, checksum, and sync status, plus your settings. These stay on your phone.</li>
 </ul>
 <p><strong>What we do not collect:</strong> we receive nothing. The app has no account with us, no analytics, no advertising, no crash reporting to us, and no third-party code other than Google Play services for connecting your Google account. It does not use your location, contacts, or advertising identifiers.</p>
 
 <h2>How Information Is Used</h2>
-<p>The app uses the information above only to upload your recordings to your Google Drive and to show you what it has uploaded. Nothing is used for advertising, sold, or used to train AI models.</p>
+<p>The app uses the information above only to sync the folders you paired and to show you what it did. Nothing is used for advertising, sold, or used to train AI models.</p>
+
+<h2>Deletions</h2>
+<p>Some sync methods delete files, and only when you choose them: mirrors and two way sync carry deletions from one side to the other, and the "then delete" methods remove files after a verified transfer. Drive files go to Drive's trash. Phone files go to a trash folder inside the paired folder, kept for 30 days. The exception is "Upload then delete," which frees space on your phone only after Google Drive's copy has been checked against the phone's.</p>
 
 <h2>Google User Data</h2>
-<p>Voice Memo Sync's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
-<p>Your recordings travel directly from your phone to Google over an encrypted connection. Google stores them in your Drive under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p>Pairsync's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+<p>Your files travel directly between your phone and Google over an encrypted connection. Google stores them in your Drive under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
 <h2>Data Storage and Security</h2>
-<p>The app's records stay in its private storage on your phone, protected by Android's app sandbox, and are left out of Android backups. Uploads use HTTPS only.</p>
+<p>The app's records stay in its private storage on your phone, protected by Android's app sandbox, and are left out of Android backups. Transfers use HTTPS only.</p>
 
 <h2>Sharing of Information</h2>
-<p>We do not share information, because we do not receive any. Your recordings are shared only with Google, as your Drive provider, when the app uploads them at your direction.</p>
+<p>We do not share information, because we do not receive any. Your files are shared only with Google, as your Drive provider, when the app syncs them at your direction.</p>
 
 <h2>Retention</h2>
 <ul>
-<li><strong>On your phone:</strong> until you clear the app's data or uninstall it.</li>
-<li><strong>In your Google Drive:</strong> until you delete the files. The app only uploads. It never deletes anything, on your phone or in your Drive.</li>
+<li><strong>On your phone:</strong> sync records until you remove the pair, clear the app's data, or uninstall it.</li>
+<li><strong>In your Google Drive:</strong> until you delete the files.</li>
 </ul>
 
 <h2>Your Choices</h2>
 <ul>
-<li><strong>Stop uploads and revoke access:</strong> in the app, Settings, Disconnect. You can also remove access at <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</li>
-<li><strong>Choose what uploads:</strong> pick the folder, the start date for older recordings, Wi-Fi only, and plugged in only, in the app.</li>
+<li><strong>Stop syncing and revoke access:</strong> in the app, Settings, Disconnect. You can also remove access at <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</li>
+<li><strong>Choose what syncs and how:</strong> each folder pair has its own folders and method, and can be turned off or removed. Removing a pair deletes no files.</li>
 <li><strong>Remove everything from your phone:</strong> uninstall the app.</li>
 </ul>
 
