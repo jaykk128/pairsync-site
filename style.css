@@ -1,0 +1,35 @@
+/* Terminal Neon, the app's design system: flat planes, hairline borders, accent only on links. */
+:root {
+  --plane: #f4f3ee; --surface: #fbfaf6; --grid: #e6e3da;
+  --muted: #6f6b62; --ink2: #45423b; --ink: #121210; --accent: #0b7266;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --plane: #0b0b0a; --surface: #131311; --grid: #23231f;
+    --muted: #918c84; --ink2: #cbc6bc; --ink: #f4f2ec; --accent: #2fe3c8;
+  }
+}
+* { box-sizing: border-box; }
+html { background: var(--plane); color: var(--ink); }
+body {
+  margin: 0;
+  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+main {
+  max-width: 720px; margin: 32px auto; padding: 24px 24px 40px;
+  background: var(--surface); border: 1px solid var(--grid); border-radius: 2px;
+}
+h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 8px; letter-spacing: -0.01em; }
+h2 {
+  font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+  margin: 28px 0 8px; padding-top: 12px; border-top: 1px solid var(--grid);
+}
+p, li { color: var(--ink2); max-width: 68ch; }
+ul { padding-left: 1.2em; }
+li { margin: 6px 0; }
+strong { color: var(--ink); }
+a { color: var(--accent); }
+.lede { font-size: 1.1rem; color: var(--ink); }
+.meta, .nav { font-size: 0.85rem; color: var(--muted); }
+.links { margin-top: 24px; }
